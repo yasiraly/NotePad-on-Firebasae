@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.body {
+  margin-top: 8rem;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.globalFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  padding: 1.2rem;
+  background-color: rgb(0, 162, 255);
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+button {
+  cursor: pointer;
+  /* outline: none; */
+}
+
+input,
+textarea {
+  outline: none;
+  border: none;
+}
+
+.navbar>a {
+  font-size: 18px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: white;
+  border-bottom: 2px solid transparent;
+  transition: .3s;
+}
+
+.navbar>a:hover {
+  border-bottom: 2px solid white;
+  transition: .3s;
+}
+
+.navbar.globalFlex {
+  gap: 20px;
+  /* width: 30%; */
+}
+
+.logo {
+  width: 70%;
+}
+
+.navbarData {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo>h1 {
+  font-size: 30px;
+  color: white;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+form {
+  margin-top: 5rem;
+}
+
+
+form>button {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  width: 12%;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 2px 4px 10px 0px #0000003b;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form>button:hover {
+  transition: 0.3s;
+  transform: scale(1.03);
+}
+
+.blue {
+  color: rgb(0, 162, 255);
+  letter-spacing: 1px;
+}
+
+.red {
+  color: red;
+  letter-spacing: 1px;
+}
+
+.yellow {
+  color: rgb(255, 230, 0);
+  letter-spacing: 1px;
+}
+
+.green {
+  color: green;
+  letter-spacing: 1px;
+}
+
+.logoutBtn {
+  padding: 0.5rem;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  width: auto;
+  transition: 0.3s;
+}
+
+.logoutBtn:hover {
+  transition: 0.3s;
+  transform: scale(1.06);
+}
+
+.globalFlex.createBlog {
+  flex-direction: column;
+  gap: 25px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: rgb(0, 170, 255);
+  width: 40%;
+}
+
+.globalFlex.createBlog>input,
+textarea,
+button {
+  width: 100%;
+  padding: 0.5rem;
+  resize: none;
+}
+
+.createBlogBtn {
+  background-color: white;
+  color: rgb(0, 162, 255);
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.createBlogBtn:hover {
+  transition: 0.3s;
+  transform: scale(1.012);
+}
+
+.userName {
+  color: rgb(0, 14, 21);
+  text-decoration: underline;
+}
+
+.myNotes {
+  padding: 2rem;
+  background-color: rgb(0, 170, 255);
+  width: 30%;
+  margin: 2rem auto;
+  animation-name: userNotes;
+  animation-duration: 0.5s;
+}
+
+.myNotesData {
+  background-color: white;
+  padding: 1rem;
+}
+
+.myNotesBorder {
+  border-top: 2px solid rgba(0, 0, 0, 0.134);
+  margin: 0.5rem 0;
+}
+
+.myNotesData>i {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.myNotesData>i:hover {
+  transform: scale(1.13);
+  transition: 0.3s;
+}
+
+.myNotesData>textarea {
+  border: none;
+  font-size: 15px;
+  height: 11rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  line-height: 20px;
+  background-color: transparent;
+}
+
+.myNotesData>h1 {
+  cursor: default;
+}
+
+footer.globalFlex {
+  justify-content: space-between;
+  background-color: rgb(0, 162, 255);
+  padding: 0.9rem 1.5rem;
+  color: white;
+  font-weight: normal;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+@keyframes userNotes {
+  to {
+    transform: translateX(0%);
+    transform: rotate(0deg);
+  }
+
+  from {
+    transform: translateX(100%);
+    transform: rotate(180deg);
+  }
+}
